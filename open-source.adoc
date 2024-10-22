@@ -2,46 +2,28 @@
 
 image::opensource-banner.jpg[]
 
-Bitcoin is built using open source software. In this chapter we analyze
-what this means, how maintenance of the software works, and how open
-source software in Bitcoin allows for permissionless
-development. We dip our toes into _selection cryptography_, which
-deals with the selection and use of libraries in cryptographic
-systems. The chapter includes a section about Bitcoin's review process, followed by another one on the ways Bitcoin developers get funded. The last section talks
-about how Bitcoin's open source culture can look really weird from the
-outside, and why this perceived weirdness is really a sign of good
-health.
+Bitcoin se construye utilizando software de código abierto. En este capítulo analizamos
+qué significa esto, cómo funciona el mantenimiento del software y cómo el software de código abierto en Bitcoin permite el desarrollo sin permisos. Nos adentramos en la _selección criptografíca_, que trata sobre la elección y el uso de bibliotecas en sistemas criptográficos. El capítulo incluye una sección sobre el proceso de revisión de Bitcoin, seguida de otra sobre las formas en que los desarrolladores de Bitcoin obtienen financiación. La última sección habla sobre cómo la cultura de código abierto de Bitcoin puede parecer realmente extraña desde el exterior, y por qué esta extrañeza percibida es realmente una señal de buena salud.
 
-Most Bitcoin softwares, and especially Bitcoin Core, is open
-source. This means that the source code of the software is made
-available to the general public for scrutiny, tinkering, modification,
-and redistribution. The definition of open source at
-https://opensource.org/osd[] includes, among others, the following
-important points:
+La mayoría de los desarrollos en Bitcoin, y especialmente Bitcoin Core, son de código abierto. Esto significa que el código fuente del software está disponible para el público en general para su escrutinio, modificación y redistribución. La definición de código abierto en https://opensource.org/osd[] incluye, entre otros, los siguientes puntos importantes:
 
 [quote, The Open Source Definition, Open Source Initiative website]
 ____
-Free Redistribution:: The license shall not restrict any party from
-selling or giving away the software as a component of an aggregate
-software distribution containing programs from several different
-sources. The license shall not require a royalty or other fee for such
-sale.
-Source Code:: The program must include source code, and must allow
-distribution in source code as well as compiled form. Where some form
-of a product is not distributed with source code, there must be a
-well-publicized means of obtaining the source code for no more than a
-reasonable reproduction cost, preferably downloading via the Internet
-without charge. The source code must be the preferred form in which a
-programmer would modify the program. Deliberately obfuscated source
-code is not allowed. Intermediate forms such as the output of a
-preprocessor or translator are not allowed.
-Derived Works:: The license must allow modifications and derived
-works, and must allow them to be distributed under the same terms as
-the license of the original software.
+Distribución Libre:: La licencia no debe restringir a ninguna parte, vender o regalar el software como un componente de una distribución de software agregada, que contenga programas de varias fuentes diferentes. La licencia no debe requerir un royalty u otra tarifa por dicha venta.
+
+Código Fuente:: El programa debe incluir el código fuente y debe permitir
+la distribución en código fuente así como en forma compilada. Cuando alguna forma
+de un producto no se distribuye con el código fuente, debe haber un
+medio bien publicitado para obtener el código fuente por no más que un
+costo razonable de reproducción, preferiblemente descargándolo a través de Internet
+sin cargo. El código fuente debe ser la forma preferida en la que un
+programador modificaría el programa. No se permite el código fuente deliberadamente ofuscado. No se permiten formas intermedias como la salida de un preprocesador o traductor.
+
+Trabajos Derivados:: La licencia debe permitir modificaciones y trabajos derivados, y debe permitir que se distribuyan bajo los mismos términos que la licencia del software original.
 ____
 
-Bitcoin Core adheres to this definition by being distributed under the
-https://github.com/bitcoin/bitcoin/blob/master/COPYING[MIT License]:
+Bitcoin Core se adhiere a esta definición al ser distribuido bajo la
+https://github.com/bitcoin/bitcoin/blob/master/COPYING[Licencia MIT]:
 
 ----
 The MIT License (MIT)
@@ -70,68 +52,57 @@ some other interesting aspects of open source software in
 Bitcoin.
 
 [[softwaremaintenance]]
-=== Software maintenance
+=== Mantenimiento del software
 
-Bitcoin Core's source code is maintained in a Git repository hosted on
-https://github.com/bitcoin/bitcoin[GitHub]. Anyone can clone that very
-repository without asking for any permission, and then inspect, build, or make
-changes to it locally. This means that there are many thousands of
-copies of the repository spread throughout the globe. These are
-all copies of the same repository, so what makes this specific GitHub
-Bitcoin Core repository so special? Technically it's not special at all,
-but socially it has become the focal point of Bitcoin development.
+El código fuente de Bitcoin Core se mantiene en un repositorio Git alojado en
+https://github.com/bitcoin/bitcoin[GitHub]. Cualquiera puede clonar ese mismo
+repositorio sin pedir permiso, y luego inspeccionarlo, construirlo o hacer
+cambios localmente. Esto significa que hay miles de
+copias del repositorio distribuidas por todo el mundo. Estas son
+todas copias del mismo repositorio, entonces, ¿qué hace que este repositorio específico de GitHub de Bitcoin Core sea tan especial? Técnicamente no es especial en absoluto,
+pero socialmente se ha convertido en el punto focal del desarrollo de Bitcoin.
 
-Bitcoin and security expert Jameson Lopp
-explains this very
-well in a https://blog.lopp.net/who-controls-bitcoin-core-/[blog post] titled "`Who Controls Bitcoin Core?`":
-
-[quote, Jameson Lopp, Who Controls Bitcoin Core? (2018)]
-____
-Bitcoin Core is a focal point for development of the Bitcoin protocol
-rather than a point of command and control. If it ceased to exist for
-any reason, a new focal point would emerge — the technical
-communications platform upon which it’s based (currently the GitHub
-repository) is a matter of convenience rather than one of definition /
-project integrity. In fact, we have already seen Bitcoin’s focal point
-for development change platforms and even names!
-____
-
-He goes on to explain how Bitcoin Core's software is maintained and
-secured against malicious code changes. The general takeaway from this
-full article is summarized at its very end:
+El experto en Bitcoin y seguridad Jameson Lopp
+explica esto muy
+bien en un https://blog.lopp.net/who-controls-bitcoin-core-/[post de blog] titulado "`¿Quién controla Bitcoin Core?`":
 
 [quote, Jameson Lopp, Who Controls Bitcoin Core? (2018)]
 ____
-No one controls Bitcoin.
-
-No one controls the focal point for Bitcoin development.
+Bitcoin Core es un centro de desarrollo para el protocolo de Bitcoin
+en lugar de un punto de mando y control. Si dejara de existir por
+alguna razón, surgiría un nuevo centro de desarrollo: la plataforma de
+comunicaciones técnicas sobre la cual se basa (actualmente el repositorio de GitHub)
+es una cuestión de conveniencia más que de definición o integridad del proyecto.
+De hecho, ya hemos visto cambiar la plataforma e incluso el nombre del centro de desarrollo
+del desarrollo de Bitcoin.
 ____
 
-Bitcoin Core developer Eric Lombrozo talks further about the
-development process in his
-https://medium.com/@elombrozo/the-bitcoin-core-merge-process-74687a09d81d[Medium
-post] titled "`The Bitcoin Core Merge Process`".
+Continúa explicando cómo se mantiene y asegura el software de Bitcoin Core contra cambios maliciosos en el código. La conclusión general de este artículo completo se resume al final:
+
+[quote, Jameson Lopp, Who Controls Bitcoin Core? (2018)]
+____
+Nadie controla Bitcoin.
+
+Nadie controla el punto focal del desarrollo de Bitcoin.
+____
+
+El desarrollador de Bitcoin Core Eric Lombrozo habla más sobre el
+proceso de desarrollo en su
+https://medium.com/@elombrozo/the-bitcoin-core-merge-process-74687a09d81d[publicación en Medium] titulada "`El proceso de fusión de Bitcoin Core`".
 
 [quote, Eric Lombrozo on Medium.com, The Bitcoin Core Merge Process (2017)]
 ____
-Anyone can fork the code base repository and make arbitrary changes to
-their own repository. They can build a client from their own
-repository and run that instead if they want. They can also make
-binary builds for other people to run.
+Cualquiera puede bifurcar el repositorio de la base de código y hacer cambios arbitrarios en su propio repositorio. Pueden construir un cliente desde su propio repositorio y ejecutarlo si así lo desean. También pueden hacer compilaciones binarias para que otras personas las ejecuten.
 
-If someone wants to merge a change they’ve made in their own
-repository into Bitcoin Core, they can submit a pull request. Once
-submitted, anyone can review the changes and comment on them
-regardless of whether or not they have commit access to Bitcoin Core
-itself.
+Si alguien quiere fusionar un cambio que ha hecho en su propio repositorio en Bitcoin Core, puede enviar una solicitud de extracción. Una vez enviada, cualquiera puede revisar los cambios y comentarlos, independientemente de si tiene acceso de commit a Bitcoin Core o no.
 ____
 
-It should be noted that pull requests can take a very long time
-before being merged to the repository by maintainers, and that's usually due to a lack
-of review, see <<review>>, which is often due to a lack of _reviewers_.
+Cabe señalar que las `pull requests` pueden tardar mucho tiempo
+antes de ser fusionadas en el repositorio por los mantenedores, y eso generalmente se debe a la falta
+de revisión, ver <<review>>, que a menudo se debe a la falta de _revisores_.
 
-Lombrozo also talks about the process that surrounds consensus changes, but that's a
-bit beyond the scope of this chapter. See <<upgrading>> for more information on how the Bitcoin protocol gets upgraded.
+Lombrozo también habla sobre el proceso que rodea los cambios de consenso, pero eso está
+un poco más allá del alcance de este capítulo. Consulte <<upgrading>> para obtener más información sobre cómo se actualiza el protocolo de Bitcoin.
 
 === Permissionless development
 
