@@ -334,38 +334,29 @@ actualización fuera menos segura.
 
 [quote, Gregory Maxwell on Reddit, Is Taproot development moving too fast or too slow?]
 ____
-At this juncture, additional waiting isn't adding more review and
-certainty. Instead, additional delay is sapping inertia and
-potentially increasing risk somewhat as people start forgetting
-details, delaying work on downstream usage (like wallet support), and
-not investing as much additional review effort as they would be
-investing if they felt confident about the activation timeframe.
+En este punto, la espera adicional no está agregando más revisión y certeza. En cambio, la demora adicional está agotando la inercia y potencialmente aumentando el riesgo, ya que las personas comienzan a olvidar detalles, retrasando el trabajo en el uso descendente (como el soporte de billetera), y no invirtiendo tanto esfuerzo adicional en la revisión como lo harían si se sintieran seguros sobre el marco de tiempo de activación.
 ____
 
-Eventually, this dispute got resolved thanks to a new proposal by
-David Harding and Russel O'Connor called Speedy Trial, which entailed a comparatively shorter signaling period for miners to
-lock in activation of Taproot, or fail fast. If they activated it
-during that window of time, then Taproot would be deployed approximately 6 months
-later. This upgrade is covered in more detail in <<upgrading>>.
+Eventualmente, esta disputa se resolvió gracias a una nueva propuesta de
+David Harding y Russel O'Connor llamada Speedy Trial, que implicaba un período de señalización comparativamente más corto para que los mineros
+bloquearan la activación de Taproot, o fallaran rápidamente. Si lo activaban
+durante esa ventana de tiempo, entonces Taproot se desplegaría aproximadamente 6 meses
+después. Esta actualización se cubre con más detalle en <<upgrading>>.
 
-Someone who's not used to Bitcoin's development process would probably think that
-these heated debates look awfully bad and even toxic. There are at
-least two factors that make them look bad, in some people's eyes:
+Alguien que no esté acostumbrado al proceso de desarrollo de Bitcoin probablemente pensaría que estos debates acalorados se ven terriblemente mal e incluso tóxicos. Hay al menos dos factores que los hacen parecer malos, a los ojos de algunas personas:
 
-* Compared to closed source companies, all debates happen in the open,
-  unedited. A software company like Google would never let its employees
-  debate proposed features in the open, indeed it would at most publish a
-  statement about the company's stance on the subject. This makes
-  companies look more harmonic compared to Bitcoin.
-* Since Bitcoin is permissionless, anyone is allowed to voice
-  their opinions. This is fundamentally different from a closed source
-  company that has a handful of people with an opinion, usually
-  like-minded people. The plethora of opinions expressed within Bitcoin is simply
-  staggering compared to, for example, PayPal.
+* En comparación con las empresas de código cerrado, todos los debates ocurren en público,
+  sin editar. Una empresa de software como Google nunca permitiría que sus empleados
+  debatieran características propuestas en público, de hecho, como mucho publicaría una
+  declaración sobre la postura de la empresa sobre el tema. Esto hace que
+  las empresas parezcan más armónicas en comparación con Bitcoin.
+* Dado que Bitcoin es sin permisos, cualquiera puede expresar
+  sus opiniones. Esto es fundamentalmente diferente de una empresa de código cerrado
+  que tiene un puñado de personas con una opinión, generalmente
+  personas con ideas afines. La abundancia de opiniones expresadas dentro de Bitcoin es simplemente
+  asombrosa en comparación con, por ejemplo, PayPal.
 
-Most Bitcoin developers would argue that this openness brings about a good and
-healthy environment, and even that it is necessary for producing the best
-outcome.
+La mayoría de los desarrolladores de Bitcoin argumentarían que esta apertura genera un entorno bueno y saludable, e incluso que es necesaria para producir el mejor resultado.
 
 As hinted in <<threats>>, the second
 bullet above can be very beneficial but comes with a downside. An attacker could use stalling
