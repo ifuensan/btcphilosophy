@@ -274,103 +274,63 @@ de manera estricta de arriba hacia abajo, de hecho, múltiples fases pueden ocur
 simultáneamente, y a veces se va y viene entre
 ellas. Diferentes personas también pueden proporcionar comentarios durante diferentes fases.
 
-One of the most prolific code reviewers on Bitcoin Core is Jon
-Atack. He wrote
-https://jonatack.github.io/articles/how-to-review-pull-requests-in-bitcoin-core[a
-blog post] about how to review pull requests in Bitcoin Core. He
-emphasizes that a good code reviewer focuses on how to best add value.
+Uno de los revisores de código más prolíficos en Bitcoin Core es Jon
+Atack. Escribió
+https://jonatack.github.io/articles/how-to-review-pull-requests-in-bitcoin-core[un
+post de blog] sobre cómo revisar "pull requests" en Bitcoin Core. Él
+enfatiza que un buen revisor de código se enfoca en cómo agregar el mayor valor.
 
 [quote, Jon Atack, How to Review Pull Requests in Bitcoin Core (2020)]
 ____
-As a newcomer, the goal is to try to add value, with friendliness and
-humility, while learning as much as possible.
+Como recién llegado, el objetivo es tratar de agregar valor, con amabilidad y humildad, mientras se aprende lo más posible.
 
-A good approach is to make it not about you, but rather "How can I
-best serve?"
+Un buen enfoque es no hacerlo sobre ti, sino más bien "¿Cómo puedo servir mejor?"
 ____
 
-He highlights the fact that review is a truly limiting factor in Bitcoin
-Core. Lots of good ideas get stuck in a limbo where no review occurs, pending. Notice that
-reviewing is not only beneficial to Bitcoin, but also a great way to learn about the software while providing
-value to it, at the same time. Atack's rule of thumb is to review 5-15 PRs before
-making any PR of your own. Again, your focus should be on how to best serve the community,
-not on how to get your own code merged. On top of this, he stresses the
-importance of doing review at the right level: is this the time for
-nits and typos, or does the developer need more of a conceptually-oriented 
-review?
+Destaca el hecho de que la revisión es un factor verdaderamente limitante en Bitcoin Core. Muchas buenas ideas quedan atrapadas en un limbo donde no ocurre ninguna revisión, pendientes. Ten en cuenta que revisar no solo es beneficioso para Bitcoin, sino también una excelente manera de aprender sobre el software mientras se le proporciona valor al mismo tiempo. La regla general de Atack es revisar de 5 a 15 PRs antes de hacer cualquier PR propio. Nuevamente, tu enfoque debe estar en cómo servir mejor a la comunidad, no en cómo lograr que tu propio código sea fusionado. Además de esto, enfatiza la importancia de hacer la revisión en el nivel correcto: ¿es este el momento para detalles menores y errores tipográficos, o el desarrollador necesita una revisión más orientada conceptualmente?
 
 [quote, Jon Atack, How to Review Pull Requests in Bitcoin Core (2020)]
 ____
-A useful first question when beginning a review can be, "What is most
-needed here at this time?" Answering this question requires experience
-and accumulated context, but it is a useful question in deciding how
-you can add the most value in the least time.
+Una pregunta útil al comenzar una revisión puede ser, "¿Qué es lo más necesario aquí en este momento?" Responder a esta pregunta requiere experiencia y contexto acumulado, pero es una pregunta útil para decidir cómo puedes agregar el mayor valor en el menor tiempo.
 ____
 
-The second half of the post consists of some useful hands-on technical
-guidance on how to actually do the reviewing, and provides links to
-important documentation for further reading.
+La segunda mitad del artículo consiste en algunas orientaciones técnicas útiles sobre cómo realizar la revisión, y proporciona enlaces a documentación importante para una lectura adicional.
 
-Bitcoin Core developer and code reviewer Gloria Zhao has written
-https://github.com/glozow/bitcoin-notes/blob/master/review-checklist.md[an
-article] containing questions she usually asks herself during a
-review. She also states what she considers to be a good review.
+La desarrolladora y revisora de código de Bitcoin Core, Gloria Zhao, ha escrito
+https://github.com/glozow/bitcoin-notes/blob/master/review-checklist.md[un artículo] que contiene preguntas que usualmente se hace durante una revisión. También menciona lo que considera una buena revisión.
 
 [quote, Gloria Zhao, Common PR Review Questions on GitHub (2022)]
 ____
-I personally think a good review is one where I've asked myself a lot
-of pointed questions about the PR and been satisfied with the answers
-to them. +
+Personalmente, creo que una buena revisión es aquella en la que me he hecho muchas preguntas puntuales sobre la PR y he quedado satisfecho con las respuestas a ellas. +
 ...[snip]... +
-Naturally, I start with conceptual questions, then approach-related
-questions, and then implementation questions. Generally, I personally
-think it's useless to leave C++ syntax-related comments on a draft PR,
-and would feel rude going back to "does this make sense" after the
-author has addressed 20+ of my code organization suggestions.
+Naturalmente, comienzo con preguntas conceptuales, luego preguntas relacionadas con el enfoque, y luego preguntas sobre la implementación. Generalmente, personalmente creo que es inútil dejar comentarios relacionados con la sintaxis de C++ en una PR preliminar, y me parecería grosero volver a "¿tiene sentido esto?" después de que el autor haya abordado más de 20 de mis sugerencias sobre la organización del código.
 ____
 
-Her idea that a good review should focus on what's most needed at
-a specific point in time aligns well with Jon Atack's advice. She
-proposes a list of questions that you may ask yourself at various levels of the review process, but stresses
-that this list is not in any way exhaustive nor
-a straight-out recipe. The list is illustrated with real-life
-examples from GitHub.
+Su idea de que una buena revisión debe centrarse en lo que más se necesita en un momento específico se alinea bien con el consejo de Jon Atack. Ella propone una lista de preguntas que puedes hacerte en varios niveles del proceso de revisión, pero enfatiza que esta lista no es de ninguna manera exhaustiva ni una receta directa. La lista está ilustrada con ejemplos de la vida real de GitHub.
 
-=== Funding
+=== Financiación
 
-Lots of people work with Bitcoin open source development, either for Bitcoin
-Core or for other projects. Many do it in their spare time without
-getting any compensation, but some developers are also getting paid to
-do it.
+Muchas personas trabajan en el desarrollo de código abierto de Bitcoin, ya sea para Bitcoin Core o para otros proyectos. Muchos lo hacen en su tiempo libre sin recibir ninguna compensación, pero algunos desarrolladores también reciben pagos por hacerlo.
 
-Companies, individuals, and organizations who have an interest in
-Bitcoin's continued success can donate funds to developers, either
-directly or through organizations that in turn distribute the funds to
-individual developers.
-There are also a number of Bitcoin-focused companies that
-hire skilled developers to let them work full-time on Bitcoin.
+Empresas, individuos y organizaciones que tienen interés en el éxito continuo de Bitcoin pueden donar fondos a los desarrolladores, ya sea directamente o a través de organizaciones que a su vez distribuyen los fondos a desarrolladores individuales. También hay varias empresas enfocadas en Bitcoin que contratan a desarrolladores capacitados para que trabajen a tiempo completo en Bitcoin.
 
-=== Culture shock
+=== Choque cultural
 
-People sometimes get the impression that there's a lot of infighting
-and endless heated debates among Bitcoin developers, and that they are
-incapable of making decisions.
+A veces, la gente tiene la impresión de que hay muchas disputas internas
+y debates acalorados interminables entre los desarrolladores de Bitcoin, y que son
+incapaces de tomar decisiones.
 
-For example, the Taproot deployment mechanism, described in <<taproot-deployment>>,
-was discussed over a long period of time during which two "`camps`" formed. One
-wanted to "`fail`" the upgrade if miners hadn't overwhelmingly
-voted for the new rules after a certain moment, while the other
-wanted to enforce the rules after that moment no matter what. Michael Folkson
-summarizes the arguments from the two camps in an
+Por ejemplo, el mecanismo de implementación de Taproot, descrito en <<taproot-deployment>>, fue discutido durante un largo período de tiempo durante el cual se formaron dos "`bandos`". Uno quería que "`fallase`" la actualización si los mineros no habían votado abrumadoramente a favor de las nuevas reglas después de un cierto momento, mientras que el otro quería hacer cumplir las reglas después de ese momento sin importar qué. Michael Folkson
+resume los argumentos de los dos bandos en un
 https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-February/018380.html[email]
-to the Bitcoin-dev mailing list.
+enviado a la lista de correo Bitcoin-dev.
 
-The debate went on seemingly forever, and it was really hard to
-see any consensus on this forming any time soon. This got people
-frustrated and as a result the heat intensified. Gregory Maxwell (as user nullc) worried
-https://www.reddit.com/r/Bitcoin/comments/hrlpnc/technical_taproot_why_activate/fyqbn8s/?utm_source=share&utm_medium=web2x&context=3[on
-Reddit] that the lengthy discussions would make the
-upgrade less safe.
+El debate continuó aparentemente para siempre, y era realmente difícil
+ver que se formara algún consenso en cualquier momento cercano. Esto frustró a la gente
+y, como resultado, la intensidad aumentó. Gregory Maxwell (como usuario nullc) expresó su preocupación
+https://www.reddit.com/r/Bitcoin/comments/hrlpnc/technical_taproot_why_activate/fyqbn8s/?utm_source=share&utm_medium=web2x&context=3[en
+Reddit] de que las largas discusiones harían que la
+actualización fuera menos segura.
 
 [quote, Gregory Maxwell on Reddit, Is Taproot development moving too fast or too slow?]
 ____
