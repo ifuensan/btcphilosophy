@@ -243,11 +243,10 @@ Si bien esta no es la guía definitiva para el éxito, puede ser muy útil
 revisar estos puntos al practicar la selección criptográfica.
 
 //noqr
-Due to the issues mentioned above by Maxwell, Bitcoin Core tries
-really hard to
-https://github.com/bitcoin/bitcoin/blob/master/doc/dependencies.md[minimize its exposure to third party libraries]. Of course, you can't
-eradicate all external dependencies, otherwise you'd have to write everything by yourself,
-from font rendering to implementation of system calls.
+Debido a los problemas mencionados anteriormente por Maxwell, Bitcoin Core se esfuerza mucho por
+https://github.com/bitcoin/bitcoin/blob/master/doc/dependencies.md[minimizar su exposición a bibliotecas de terceros]. Por supuesto, no puedes
+erradicar todas las dependencias externas, de lo contrario tendrías que escribir todo por ti mismo,
+desde el renderizado de fuentes hasta la implementación de llamadas al sistema.
 
 [[review]]
 === Review
