@@ -104,166 +104,143 @@ de revisión, ver <<review>>, que a menudo se debe a la falta de _revisores_.
 Lombrozo también habla sobre el proceso que rodea los cambios de consenso, pero eso está
 un poco más allá del alcance de este capítulo. Consulte <<upgrading>> para obtener más información sobre cómo se actualiza el protocolo de Bitcoin.
 
-=== Permissionless development
+=== Desarrollo sin permisos
 
-We've established that anyone can write code for Bitcoin Core
-without asking for any permission, but not necessarily have it merged to the main
-Git repository. This affects any modification, from changing color schemes of the graphical
-user interface, to the way peer-to-peer messages are formatted, and even
-consensus rules, i.e. the set of rules that define a valid
-blockchain.
+Hemos establecido que cualquiera puede escribir código para Bitcoin Core
+sin pedir permiso, pero no necesariamente tenerlo fusionado en el repositorio
+principal de Git. Esto afecta cualquier modificación, desde cambiar los esquemas de color de la interfaz gráfica de usuario, hasta la forma en que se formatean los mensajes de peer-to-peer, e incluso
+las reglas de consenso, es decir, el conjunto de reglas que definen una
+blockchain válida.
 
-Probably equally important is that users are free
-to develop systems on top of Bitcoin, without asking for any
-permission. We've seen countless successful software projects that were
-built on top of Bitcoin, such as:
+Probablemente igual de importante es que los usuarios son libres
+de desarrollar sistemas sobre Bitcoin, sin pedir ningún
+permiso. Hemos visto innumerables proyectos de software exitosos que se
+construyeron sobre Bitcoin, tales como:
 
 //noqr
-Lightning Network:: A payment network that allows for fast payment of
-very small amounts. It requires very few on-chain Bitcoin
-transactions. Various inter-operable implementations exist, such as
+Lightning Network:: Una red de pagos que permite pagos rápidos de
+cantidades muy pequeñas. Requiere muy pocas transacciones de Bitcoin "on-chain". Existen varias implementaciones interoperables, como
 https://github.com/ElementsProject/lightning[Core Lightning],
 https://github.com/lightningnetwork/lnd[LND],
-https://github.com/ACINQ/eclair[Eclair], and
+https://github.com/ACINQ/eclair[Eclair], y
 https://github.com/lightningdevkit[Lightning Dev Kit].
-CoinJoin:: Multiple parties collaborate to combine their payments into
-a single transaction to make address clustering
-(explained in <<blockchainprivacy>>) harder. Various implementations exist.
-Sidechains:: This system can lock a coin on Bitcoin's blockchain in order to
-unlock it on some other blockchain. This allows for bitcoins to be
-moved to some other blockchain, namely a sidechain, so as to use the features available
-on that sidechain. Examples include
-https://github.com/ElementsProject/elements[Blockstream's Elements].
-OpenTimestamps:: It allows you to https://opentimestamps.org/[timestamp a
-document] on Bitcoin's blockchain in a private way. You can then use
-that timestamp to prove that a document must have existed prior to a certain time.
+CoinJoin:: Varias partes colaboran para combinar sus pagos en una sola transacción para dificultar la agrupación de direcciones (explicado en <<blockchainprivacy>>). Existen varias implementaciones.
+Sidechains:: Este sistema puede bloquear una moneda en la blockchain de Bitcoin para
+desbloquearla en alguna otra blockchain. Esto permite que los bitcoins se
+muevan a otra blockchain, es decir, una sidechain, para utilizar las características disponibles
+en esa sidechain. Ejemplos incluyen
+https://github.com/ElementsProject/elements[Elements de Blockstream].
+OpenTimestamps:: Permite https://opentimestamps.org/[timestamp un documento]
+en la blockchain de Bitcoin de manera privada. Luego puedes usar
+ese timestamp para probar que un documento debe haber existido antes de un cierto tiempo.
 
-Without permissionless development, many of these projects would
-not have been possible. As stated in <<neutrality>>,
-if developers had to ask for permission to build protocols on top of
-Bitcoin, only the protocols allowed by the central developer granting committee 
-would be developed.
+Sin el desarrollo sin permisos, muchos de estos proyectos no
+habrían sido posibles. Como se menciona en <<neutrality>>,
+si los desarrolladores tuvieran que pedir permiso para construir protocolos sobre
+Bitcoin, solo se desarrollarían los protocolos permitidos por el comité central de desarrolladores.
 
-It is common for systems like the ones listed above to be themselves
-licensed as open source software, which in turn allows for people to
-contribute, re-use, or review their code without
-asking for any permission. Open source has become the gold standard of
-Bitcoin software licensing.
+Es común que sistemas como los mencionados anteriormente estén
+licenciados como software de código abierto, lo que a su vez permite que las personas
+contribuyan, reutilicen o revisen su código sin
+pedir ningún permiso. El código abierto se ha convertido en el estándar de oro
+de las licencias de software de Bitcoin.
 
-=== Pseudonymous development
+=== Desarrollo seudónimo
 
-Not having to ask for permission to develop Bitcoin software brings an
-interesting and important option to the table: you can write and
-publish code, in Bitcoin Core or any other open source project,
-without revealing your identity.
+No tener que pedir permiso para desarrollar software de Bitcoin trae una
+opción interesante e importante a la mesa: puedes escribir y
+publicar código, en Bitcoin Core o en cualquier otro proyecto de código abierto,
+sin revelar tu identidad.
 
-Many developers choose this option by operating under a pseudonym
-and trying to keep it detached from their true identity. The reasons
-for doing this can vary from developer to developer. One pseudonymous
-user is ZmnSCPxj. Among other projects, he contributes to Bitcoin
-Core and Core Lightning, one of several implementations of Lightning
-Network. https://zmnscpxj.github.io/about.html[He writes] on his web page:
+Muchos desarrolladores eligen esta opción operando bajo un seudónimo
+y tratando de mantenerlo separado de su verdadera identidad. Las razones
+para hacer esto pueden variar de un desarrollador a otro. Un usuario seudónimo
+es ZmnSCPxj. Entre otros proyectos, contribuye a Bitcoin
+Core y Core Lightning, una de varias implementaciones de Lightning
+Network. https://zmnscpxj.github.io/about.html[Escribe] en su página web:
 
-[quote,ZmnSCPxj on his GitHub page]
+[quote,ZmnSCPxj en su página de GitHub]
 ____
-I am ZmnSCPxj, a randomly-generated Internet person. My pronouns are
-he/him/his.
+Soy ZmnSCPxj, una persona generada aleatoriamente en Internet. Mis pronombres son
+él/él/suyo.
 
-I understand that humans instinctively desire to know my
-identity. However, I think my identity is largely immaterial, and
-prefer to be judged by my work.
+Entiendo que los humanos instintivamente desean conocer mi
+identidad. Sin embargo, creo que mi identidad es en gran medida inmaterial y
+prefiero ser juzgado por mi trabajo.
 
-If you are wondering whether to donate or not, and wondering what my
-cost of living or my income is, please understand that properly
-speaking, you should donate to me based on the utility you find my
-articles and my work on Bitcoin and the Lightning Network.
+Si te preguntas si debes donar o no, y te preguntas cuál es mi
+costo de vida o mis ingresos, por favor entiende que, propiamente
+hablando, deberías donar a mí basado en la utilidad que encuentres en mis
+artículos y mi trabajo en Bitcoin y la Lightning Network.
 ____
 
-In his case, the reason for using a pseudonym is to be judged on his
-merits and not on who the person or persons behind the
-pseudonym is or are. Interestingly, he revealed in an
-https://www.coindesk.com/markets/2020/06/29/many-bitcoin-developers-are-choosing-to-use-pseudonyms-for-good-reason/[article on
-CoinDesk] that
-the pseudonym was created for a different reason.
+En su caso, la razón para usar un seudónimo es ser juzgado por sus
+méritos y no por quién es la persona o personas detrás del
+seudónimo. Curiosamente, reveló en un
+https://www.coindesk.com/markets/2020/06/29/many-bitcoin-developers-are-choosing-to-use-pseudonyms-for-good-reason/[artículo en
+CoinDesk] que
+el seudónimo fue creado por una razón diferente.
 
-[quote, Many Bitcoin Developers Are Choosing to Use Pseudonyms – For Good Reason on CoinDesk (2021)]
+[quote, Muchos desarrolladores de Bitcoin están eligiendo usar seudónimos, y con buena razón en CoinDesk (2021)]
 ____
-My initial reason [for using a pseudonym] was simply that I was
-concerned [about] making a massive mistake; thus ZmnSCPxj was
-originally intended to be a disposable pseudonym that could be
-abandoned in such a case. However it seems to have garnered a mostly
-positive reputation, so I have retained it
+Mi razón inicial [para usar un seudónimo] fue simplemente que estaba
+preocupado [por] cometer un error masivo; por lo tanto, ZmnSCPxj fue
+originalmente destinado a ser un seudónimo desechable que podría ser
+abandonado en tal caso. Sin embargo, parece haber ganado una reputación
+mayormente positiva, así que lo he mantenido.
 ____
 
-Using a pseudonym indeed allows you to speak more freely without putting
-your personal reputation at risk should you say something stupid or
-make some big mistake. As it turned out, his pseudonym got very
-reputable and in 2019
-https://twitter.com/spiralbtc/status/1204815615678177280[he even got a
-development grant], which is in itself a testament to Bitcoin's
-permissionless nature.
+Usar un seudónimo, de hecho, te permite hablar más libremente sin poner en riesgo tu reputación personal en caso de que digas algo estúpido o cometas un gran error. Como resultó, su seudónimo se volvió muy respetado y en 2019
+https://twitter.com/spiralbtc/status/1204815615678177280[incluso recibió una beca de desarrollo], lo cual es en sí mismo un testimonio de la naturaleza sin permisos de Bitcoin.
 
-Arguably, the most well-known pseudonym in Bitcoin is Satoshi
-Nakamoto. It's unclear why he chose to be pseudonymous, but
-with hindsight it was probably a good decision for multiple reasons:
+Probablemente, el seudónimo más conocido en Bitcoin es Satoshi Nakamoto. No está claro por qué eligió ser seudónimo, pero con el tiempo probablemente fue una buena decisión por múltiples razones:
 
-* As many people speculate that Nakamoto owns a lot of bitcoin, it's
-imperative for his financial and personal safety to keep his identity
-unknown.
-* Since his identity is unknown, there is no possibility of prosecuting anyone, which
-  gives various government authorities a hard time.
-* There is no authoritative person to look up to, making Bitcoin more
-  meritocratic and resilient against blackmailing.
+* Como muchas personas especulan que Nakamoto posee una gran cantidad de bitcoins, es imperativo para su seguridad financiera y personal mantener su identidad desconocida.
+* Dado que su identidad es desconocida, no hay posibilidad de procesar a nadie, lo que dificulta a varias autoridades gubernamentales.
+* No hay una persona autoritaria a la que admirar, lo que hace que Bitcoin sea más meritocrático y resistente al chantaje.
 
-Notice that these points don't just hold true for Satoshi Nakamoto, but for
-anyone working in Bitcoin or holding significant amounts of the
-currency, to varying degrees.
+Tenga en cuenta que estos puntos no solo son válidos para Satoshi Nakamoto, sino para cualquier persona que trabaje en Bitcoin o posea cantidades significativas de la moneda, en diversos grados.
 
 [[selectioncryptography]]
-=== Selection cryptography
+=== Selección criptográfica
 
-Open source developers often make use of open source libraries developed by
-other people. This is a natural and awesome part of any healthy
-ecosystem. But Bitcoin software deals with real money and, in light of this, developers need to be extra careful when choosing which third party libraries it should depend on.
+Los desarrolladores de código abierto a menudo utilizan bibliotecas de código abierto desarrolladas por otras personas. Esto es una parte natural y asombrosa de cualquier ecosistema saludable. Pero el software de Bitcoin maneja dinero real y, en vista de esto, los desarrolladores deben ser extremadamente cuidadosos al elegir de qué bibliotecas de terceros debe depender.
 
-In a philosophical
-https://btctranscripts.com/greg-maxwell/2015-04-29-gmaxwell-bitcoin-selection-cryptography/[talk
-about cryptography], Gregory Maxwell wants to
-redefine the term "`cryptography`" which he believes to be too narrow. He
-explains that fundamentally _information wants to be free_, and
-makes his definition of cryptography based on that:
+En una filosófica
+https://btctranscripts.com/greg-maxwell/2015-04-29-gmaxwell-bitcoin-selection-cryptography/[charla
+sobre criptografía], Gregory Maxwell quiere
+redefinir el término "`criptografía`" que él cree que es demasiado estrecho. Él
+explica que fundamentalmente _la información quiere ser libre_, y
+hace su definición de criptografía basada en eso:
 
 [quote, Gregory Maxwell, Bitcoin Selection Cryptography (2015)]
 ____
-*Cryptography* is the art and science we use to fight the fundamental
-nature of information, to bend it to our political and moral will, and
-to direct it to human ends against all chance and efforts to
-oppose it.
+*La criptografía* es el arte y la ciencia que utilizamos para luchar contra la naturaleza fundamental de la información, para doblarla a nuestra voluntad política y moral, y para dirigirla hacia fines humanos contra toda probabilidad y esfuerzos para oponerse a ella.
 ____
 
-He then introduces the term _selection cryptography_, referred to as the art
-of selecting cryptographic tools, and explains why it is an
-important part of cryptography. It revolves around how to select
-cryptographic libraries, tools, and practices, or as he says "`the
-cryptosystem of picking cryptosystems`".
+Luego introduce el término _selección criptográfica_, referido como el arte
+de seleccionar herramientas criptográficas, y explica por qué es una
+parte importante de la criptografía. Gira en torno a cómo seleccionar
+bibliotecas, herramientas y prácticas criptográficas, o como él dice "`el
+criptosistema de elegir criptosistemas`".
 
-Using concrete examples, he shows how selection cryptography can
-easily go horribly wrong, and also proposes a list of questions
-you could ask yourself when practicing it.
-Below is a distilled version of that list:
+Usando ejemplos concretos, muestra cómo la selección criptográfica puede
+salir terriblemente mal, y también propone una lista de preguntas
+que podrías hacerte al practicarla.
+A continuación se muestra una versión resumida de esa lista:
 
 [start=1]
-. Is the software intended for your purposes?
-. Are the cryptographic considerations being taken seriously?
-. The review process... is there one?
-. What is the experience of the authors?
-. Is the software documented?
-. Is the software portable?
-. Is the software tested?
-. Does the software adopt best practices?
+. ¿El software está destinado a tus propósitos?
+. ¿Se están tomando en serio las consideraciones criptográficas?
+. El proceso de revisión... ¿existe uno?
+. ¿Cuál es la experiencia de los autores?
+. ¿Está documentado el software?
+. ¿Es el software portátil?
+. ¿Está probado el software?
+. ¿Adopta el software las mejores prácticas?
 
-While this is not the ultimate guide to success, it can be very helpful
-to go through these points when doing selection cryptography.
+Si bien esta no es la guía definitiva para el éxito, puede ser muy útil
+revisar estos puntos al practicar la selección criptográfica.
 
 //noqr
 Due to the issues mentioned above by Maxwell, Bitcoin Core tries
