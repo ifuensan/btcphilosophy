@@ -369,18 +369,18 @@ https://github.com/bitcoin/bitcoin/blob/master/doc/developer-notes.md[mejores pr
 
 Los desarrolladores nuevos (y antiguos) pueden frustrarse por esto. Pero, como es costumbre en el software de código abierto, siempre puedes bifurcar el repositorio, fusionar lo que quieras en tu propia bifurcación, y construir y ejecutar tu propio binario.
 
-=== Conclusion
+=== Conclusión
 
-Bitcoin Core and most other Bitcoin software is open source, which
-means that anyone is free to distribute, modify, and use the software
-as they please. The Bitcoin Core repository on GitHub is currently the
-focal point of Bitcoin development, but that status can change if
-people start to distrust its maintainers, or the website itself.
+Bitcoin Core y la mayoría del software de Bitcoin es de código abierto, lo que
+significa que cualquiera es libre de distribuir, modificar y usar el software
+como desee. El repositorio de Bitcoin Core en GitHub es actualmente el
+punto focal del desarrollo de Bitcoin, pero ese estatus puede cambiar si
+las personas comienzan a desconfiar de sus mantenedores, o del sitio web en sí.
 
-Open source allows for permissionless development in, and on top of
-Bitcoin. Whether you write code, review code or protocols; open source
-is what enables you to do it, pseudonomously or not.
+El código abierto permite el desarrollo sin permisos en, y sobre
+Bitcoin. Ya sea que escribas código, revises código o protocolos; el código abierto
+es lo que te permite hacerlo, seudónimamente o no.
 
-The development process around Bitcoin is radically open, which can
-make Bitcoin look like a toxic and inefficient place, but that's what
-keeps Bitcoin resilient against malicious actors.
+El proceso de desarrollo en torno a Bitcoin es radicalmente abierto, lo que puede
+hacer que Bitcoin parezca un lugar tóxico e ineficiente, pero eso es lo que
+mantiene a Bitcoin resistente contra actores maliciosos.
