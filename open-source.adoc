@@ -358,26 +358,16 @@ Alguien que no esté acostumbrado al proceso de desarrollo de Bitcoin probableme
 
 La mayoría de los desarrolladores de Bitcoin argumentarían que esta apertura genera un entorno bueno y saludable, e incluso que es necesaria para producir el mejor resultado.
 
-As hinted in <<threats>>, the second
-bullet above can be very beneficial but comes with a downside. An attacker could use stalling
-tactics, like the ones outlined in the https://www.gutenberg.org/ebooks/26184[Simple
-Sabotage Field Manual], to distort the decision making and development
-process.
+Como se menciona en <<threats>>, el segundo punto anterior puede ser muy beneficioso, pero tiene una desventaja. Un atacante podría usar tácticas de demora, como las descritas en el https://www.gutenberg.org/ebooks/26184[Manual de Sabotaje Simple], para distorsionar el proceso de toma de decisiones y desarrollo.
 
-Another thing worth mentioning is that, as noted in <<selectioncryptography>>,
-since Bitcoin is money and Bitcoin Core secures unfathomable amounts
-of money, security in this context is not taken lightly. This is why seasoned Bitcoin Core
-developers might appear very hard-headed, which attitude is
-usually warranted. Indeed, a feature with a weak rationale behind it is not going to be
-accepted. The same would happen if it broke the
-reproducible builds (described in <<donttrustverify>>), added new dependencies, or
-if the code didn't follow Bitcoin's
-https://github.com/bitcoin/bitcoin/blob/master/doc/developer-notes.md[best
-practices].
+Otra cosa que vale la pena mencionar es que, como se señala en <<selectioncryptography>>,
+dado que Bitcoin es dinero y Bitcoin Core asegura cantidades inimaginables
+de dinero, la seguridad en este contexto no se toma a la ligera. Es por eso que los desarrolladores experimentados de Bitcoin Core pueden parecer muy obstinados, una actitud que generalmente está justificada. De hecho, una característica con una justificación débil no será aceptada. Lo mismo sucedería si rompiera las
+compilaciones reproducibles (descritas en <<donttrustverify>>), añadiera nuevas dependencias, o
+si el código no siguiera las
+https://github.com/bitcoin/bitcoin/blob/master/doc/developer-notes.md[mejores prácticas] de Bitcoin.
 
-New (and old) developers can get frustrated by this. But, as is customary in
-open source software, you can always fork the repository, merge
-whatever you want to your own fork, and build and run your own binary.
+Los desarrolladores nuevos (y antiguos) pueden frustrarse por esto. Pero, como es costumbre en el software de código abierto, siempre puedes bifurcar el repositorio, fusionar lo que quieras en tu propia bifurcación, y construir y ejecutar tu propio binario.
 
 === Conclusion
 
