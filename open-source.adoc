@@ -249,33 +249,30 @@ erradicar todas las dependencias externas, de lo contrario tendrías que escribi
 desde el renderizado de fuentes hasta la implementación de llamadas al sistema.
 
 [[review]]
-=== Review
+=== Revisión
 
-This section is named "`Review`", rather than "`Code review`", because
-Bitcoin's security relies heavily on review at multiple levels, not
-just source code. Moreover, different ideas require review at different
-levels: a consensus rule change would require a deeper review
-at more levels compared to a color scheme change or a typo fix.
+Esta sección se llama "`Revisión`", en lugar de "`Revisión de código`", porque
+la seguridad de Bitcoin depende en gran medida de la revisión en múltiples niveles, no
+solo del código fuente. Además, diferentes ideas requieren revisión en diferentes
+niveles: un cambio en las reglas de consenso requeriría una revisión más profunda
+en más niveles en comparación con un cambio en el esquema de colores o una corrección de un error tipográfico.
 
-On its way to final adoption, an idea usually flows through 
-several phases of discussion and review. 
-Some of these phases are listed below:
+En su camino hacia la adopción final, una idea generalmente pasa por varias fases de discusión y revisión. Algunas de estas fases se enumeran a continuación:
 
-. An idea is posted on the Bitcoin-dev mailing list
-. The idea is formalized into a Bitcoin Improvement Proposal (BIP)
-. The BIP is implemented in a pull request (PR) to Bitcoin Core
-. Deployment mechanisms are discussed
-. Some competing deployment mechanisms are implemented in pull
-requests to Bitcoin Core
-. Pull requests are merged to the master branch
-. Users choose whether to use the software or not
+. Una idea se publica en la lista de correo Bitcoin-dev
+. La idea se formaliza en una "Bitcoin Improvement Proposal" (BIP)
+. La BIP se implementa en una "Pull Request" (PR) a Bitcoin Core
+. Se discuten los mecanismos de implementación
+. Algunos mecanismos de implementación competidores se implementan en "Pull Requests" a Bitcoin Core
+. Las "Pull Requests" se fusionan en la rama principal
+. Los usuarios eligen si usar el software o no
 
-At each of these phases people with different points of view and
-backgrounds review the available information, be it the source code, a
-BIP, or just a loosely described idea. The phases are usually not performed
-in any strict top-down manner, indeed multiple phases can happen
-simultaneously, and sometimes you go back and forth between
-them. Different people may also provide feedback during different phases.
+En cada una de estas fases, personas con diferentes puntos de vista y
+antecedentes revisan la información disponible, ya sea el código fuente, una
+BIP, o simplemente una idea vagamente descrita. Las fases generalmente no se realizan
+de manera estricta de arriba hacia abajo, de hecho, múltiples fases pueden ocurrir
+simultáneamente, y a veces se va y viene entre
+ellas. Diferentes personas también pueden proporcionar comentarios durante diferentes fases.
 
 One of the most prolific code reviewers on Bitcoin Core is Jon
 Atack. He wrote
