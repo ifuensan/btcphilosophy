@@ -1,4 +1,4 @@
-== About this book
+== Sobre este libro
 
 _Bitcoin Development Philosophy_ es una guía para desarrolladores de Bitcoin que ya entienden los conceptos y procesos básicos como la Prueba de Trabajo, la construcción de bloques y el ciclo de vida de las transacciones, y que desean mejorar al obtener una comprensión más profunda de las decisiones de diseño y la filosofía de Bitcoin. Debería ayudar a los nuevos desarrolladores a absorber las lecciones más importantes de más de una década de desarrollo y debate público de Bitcoin, mientras les proporciona un contexto útil para evaluar nuevas ideas (buenas y malas).
 
