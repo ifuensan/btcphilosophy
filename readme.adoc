@@ -20,17 +20,17 @@ Descripción general del contenido:
 
 :xrefstyle: {oldstyle}
 
-Your feedback and contributions are most welcome! Instructions for
-building and contributing can be found in <<appendixbuild>>.
+¡Sus comentarios y contribuciones son bienvenidos! Instrucciones para
+construir y contribuir se puede encontrar en <<appendixbuild>>.
 
-=== What to expect?
+=== ¿Qué esperar?
 
-As stated above, this is a practical guide for Bitcoin developers. However, Bitcoin is a broad and complex subject and we couldn't possibly cover all of its aspects here. With this book, we
-hope to discuss the necessary features to get your development activity started as well as to enable you to further explore it on your own.
+Como se indicó anteriormente, esta es una guía práctica para desarrolladores de Bitcoin. Sin embargo, Bitcoin es un tema amplio y complejo y no podríamos cubrir todos sus aspectos aquí. Con este libro, nosotros 
+esperamos analizar las características necesarias para iniciar su actividad de desarrollo y permitirle explorarla más a fondo por su cuenta.
 
-There are lots of people involved in Bitcoin; as some of them have opposing opinions, here you may find
-resources that express contradictory ideas. However, we always
-attempt to stick to the domain of facts, where opinions do not matter.
+Hay mucha gente involucrada en Bitcoin; Como algunos de ellos tienen opiniones contrarias, aquí puedes encontrar
+recursos que expresan ideas contradictorias. Sin embargo, siempre
+intento ceñirme al dominio de los hechos, donde las opiniones no importan.
 
 === Who wrote this?
 
